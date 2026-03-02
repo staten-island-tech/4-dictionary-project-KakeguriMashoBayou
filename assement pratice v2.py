@@ -6,7 +6,7 @@ count2 = user.count(char_to_count)
 char_to_count2 = "S "
 print(count)
 
-if count > count2:
+if count >= count2:
     print("Proabably English text")
-elif:
-    print("Probably French")
+else:
+    print("Probably French text")
