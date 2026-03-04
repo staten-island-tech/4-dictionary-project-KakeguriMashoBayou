@@ -1,8 +1,10 @@
-french = ["S", "s"]
-english = ["T", "t"]
+V = input("Input:").upper()
 
-input("sentence")
-if french > english:
-    print ("This text is french")
-elif english > french :
-    print (" This text is english")
+count = 0
+
+for letter in V:
+    if letter == "H"and "O"and  "N" and "I":
+        print(count +1)
+        count = 0
+    else:
+        print(0)
