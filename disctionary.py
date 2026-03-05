@@ -1,5 +1,18 @@
-dollar_cent_store = dict[("chamoy kit",5), ("prosthetic_arms", 20), ("tin",20)]
-print(dollar_cent_store)
-shopper = input("Buy something:")
-if shopper == "chamoy kit":
-    print("5$")
+item = [
+    {"name": "chamoy kit",
+    "price": "$100000",
+    "department": "tktok",},
+
+
+    {"name": "prosthetic hand",
+    "price": "$100000",
+    "department": "human",},
+
+
+    {"name": "pickle",
+    "price": "$10",
+    "deparment": "food"}
+    ]
+print(item[0]["name"],item[0]["price"],item[0]["department"])
+print(item[1]["name"],item[1]["price"],item[1]["department"])
+print(item[2]["name"],item[2]["price"],item[2]["department"])
