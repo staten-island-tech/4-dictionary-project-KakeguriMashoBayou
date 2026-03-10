@@ -30,7 +30,15 @@ elif buyer == "pickle":
 while True:
     user = input("are you going to buy more? yes/no")
     if user == "no":
-        break
-    else: 
+        print(buyer) 
+        if buyer == "chamoy kit":
+            print("chamoy kit $100000")
+        elif buyer == "prosthethic hand":
+            print("prosthethic hand $100000")
+        elif buyer == "pickle":
+            print("pickle $10")
+        break 
+    else:
         if user == "yes":
-            
+            buy2 = input("are you going to buy more?")
+            if buy2
