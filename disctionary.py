@@ -17,20 +17,26 @@ print(item[0]["name"],item[0]["price"],item[0]["department"])
 print(item[1]["name"],item[1]["price"],item[1]["department"])
 print(item[2]["name"],item[2]["price"],item[2]["department"]) 
 
-buyer = input("what the hell do you want? ").upper()
-
+price = 0
+count = 0
+buyer = input("what are you buying?" )
 if buyer == "chamoy kit":
     print("chamoy kit")
+    price += float(100000)
 elif buyer == "prosthetic hand":
     print("prosthethic hand")
+    price += int(100000)
 elif buyer == "pickle":
     print("pickle")
-
-
+    price+= int(10)
 while True:
     user = input("are you going to buy more? yes/no")
     if user == "no":
         print(buyer) 
+        if count >=1:
+            print(buy2)
+            
+
         if buyer == "chamoy kit":
             print("chamoy kit $100000")
         elif buyer == "prosthethic hand":
@@ -41,4 +47,4 @@ while True:
     else:
         if user == "yes":
             buy2 = input("are you going to buy more?")
-            if buy2
+            if buy2 == 
