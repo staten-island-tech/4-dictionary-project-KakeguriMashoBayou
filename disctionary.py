@@ -49,4 +49,4 @@ while True:
             elif buyer == "pickle":
                 print("pickle")
                 price += int(10)
-     
+       
