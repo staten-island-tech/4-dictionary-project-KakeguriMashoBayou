@@ -28,23 +28,25 @@ elif buyer == "prosthetic hand":
     price += int(100000)
 elif buyer == "pickle":
     print("pickle")
-    price+= int(10)
 while True:
     user = input("are you going to buy more? yes/no")
     if user == "no":
         print(buyer) 
         if count >=1:
             print(buy2)
-            
-
-        if buyer == "chamoy kit":
-            print("chamoy kit $100000")
-        elif buyer == "prosthethic hand":
-            print("prosthethic hand $100000")
-        elif buyer == "pickle":
-            print("pickle $10")
-        break 
-    else:
+        print("$", price)
+        break
+    else:       
         if user == "yes":
-            buy2 = input("are you going to buy more?")
-            if buy2 == 
+            count += 1
+            buy2 = input("What do you want more brokie")
+            if buyer == "chamoy kit":
+                 print("chamoy kit")
+                 price += float(100000)
+            elif buyer == "prosthetic hand":
+                print("prosthethic hand")
+                price += int(100000)
+            elif buyer == "pickle":
+                print("pickle")
+                price += int(10)
+     
