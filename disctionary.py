@@ -1,5 +1,5 @@
 item = [
-    {"name": "chamoy kit",
+    {"name": "cat",
     "price": "$100000",
     "department": "tiktok",},
 
@@ -20,8 +20,8 @@ print(item[2]["name"],item[2]["price"],item[2]["department"])
 price = 0
 count = 0
 buyer = input("what are you buying?" )
-if buyer == "chamoy kit":
-    print("chamoy kit")
+if buyer == "cat":
+    print("cat")
     price += float(100000)
 elif buyer == "prosthetic hand":
     print("prosthethic hand")
@@ -40,8 +40,8 @@ while True:
         if user == "yes":
             count += 1
             buy2 = input("What do you want more brokie")
-            if buyer == "chamoy kit":
-                 print("chamoy kit")
+            if buyer == "cat":
+                 print("cat")
                  price += float(100000)
             elif buyer == "prosthetic hand":
                 print("prosthethic hand")
