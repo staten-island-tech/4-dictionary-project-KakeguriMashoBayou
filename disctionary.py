@@ -1,22 +1,20 @@
 item = [
     {"name": "cat",
-    "price": "$100000",
+    "price": "100000",
     "department": "tiktok",},
 
 
     {"name": "prosthetic hand",
-    "price": "$100000",
+    "price": "100000",
     "department": "human",},
 
 
     {"name": "pickle",
-    "price": "$10",
+    "price": "10",
     "department": "food"}
     ]
-print(item[0]["name"],item[0]["price"],item[0]["department"])
-print(item[1]["name"],item[1]["price"],item[1]["department"])
-print(item[2]["name"],item[2]["price"],item[2]["department"]) 
-
+for things in range(0,3):
+    print(item[things]["name"],item[things]["price"],item[things]["department"]) 
 price = 0
 count = 0
 buyer = input("what are you buying?" )
@@ -49,4 +47,3 @@ while True:
             elif buyer == "pickle":
                 print("pickle")
                 price += int(10)
-       
