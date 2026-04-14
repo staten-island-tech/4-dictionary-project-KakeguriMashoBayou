@@ -1,49 +1,32 @@
-item = [
+store = [
     {"name": "cat",
-    "price": "100000",
+    "price": 100000,
     "department": "tiktok",},
 
 
     {"name": "prosthetic hand",
-    "price": "100000",
+    "price": 100000,
     "department": "human",},
 
 
     {"name": "pickle",
-    "price": "10",
+    "price": 10,
     "department": "food"}
     ]
-for things in range(0,3):
-    print(item[things]["name"],item[things]["price"],item[things]["department"]) 
-price = 0
-count = 0
-buyer = input("what are you buying?" )
-if buyer == "cat":
-    print("cat")
-    price += float(100000)
-elif buyer == "prosthetic hand":
-    print("prosthethic hand")
-    price += int(100000)
-elif buyer == "pickle":
-    print("pickle")
-while True:
-    user = input("are you going to buy more? yes/no")
-    if user == "no":
-        print(buyer) 
-        if count >=1:
-            print(buy2)
-        print("$", price)
-        break
-    else:       
-        if user == "yes":
-            count += 1
-            buy2 = input("What do you want more brokie")
-            if buyer == "cat":
-                 print("cat")
-                 price += float(100000)
-            elif buyer == "prosthetic hand":
-                print("prosthethic hand")
-                price += int(100000)
-            elif buyer == "pickle":
-                print("pickle")
-                price += int(10)
+cart = []
+print("Hello welcome to the all tea all shade store")
+for index, item in enumerate(store):
+       print("item #:", index)
+       print("Name:", item["name"])
+       print("price:", item["price"])
+       print("department:", item["department"])
+buying = True
+while buying:
+       purchase = int(input("Choose something brah. Put in item #"))
+       print("your finally done choosing", store[purchase]["name"])
+       cart.append(purchase)
+       check_out=(input("are you done or what? Ye or Ney:"))
+       if check_out == "Ye":
+              buying = False
+        else:    
+              buying = True
