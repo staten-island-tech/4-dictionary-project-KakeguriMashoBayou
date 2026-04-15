@@ -23,10 +23,15 @@ for index, item in enumerate(store):
 buying = True
 while buying:
        purchase = int(input("Choose something brah. Put in item #"))
-       print("your finally done choosing", store[purchase]["name"])
+       print("are done choosing", store[purchase]["name"])
        cart.append(purchase)
-       check_out=(input("are you done or what? Ye or Ney:"))
-       if check_out == "Ye":
+       check_out=(input("are you done or what? Yes or No:"))
+       if check_out == "Yes":
               buying = False
        else:    
               buying = True
+for thing in cart:
+       print(store[thing]["name"], "$", cart[thing]["price"])
+       
+
+
