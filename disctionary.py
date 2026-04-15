@@ -28,5 +28,5 @@ while buying:
        check_out=(input("are you done or what? Ye or Ney:"))
        if check_out == "Ye":
               buying = False
-        else:    
+       else:    
               buying = True
