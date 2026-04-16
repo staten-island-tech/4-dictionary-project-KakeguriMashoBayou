@@ -30,8 +30,11 @@ while buying:
               buying = False
        else:    
               buying = True
+total = 0
 for thing in cart:
-       print(store[thing]["name"], "$", cart[thing]["price"])
+       print(store[thing]["name"], "$", store[thing]["price"])
+       total = total + store[thing]["price"]
+       print("your reciept: $", total)
        
 
 
